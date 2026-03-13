@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -34,6 +34,12 @@
   .nav-links { display: flex; gap: 2.5rem; list-style: none; }
   .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.85rem; letter-spacing: 1.5px; text-transform: uppercase; transition: color 0.3s; }
   .nav-links a:hover { color: var(--gold); }
+  .nav-switch {
+    padding: 0.5rem 1.2rem; border: 1px solid var(--gold); color: var(--gold);
+    font-size: 0.75rem; letter-spacing: 1.5px; text-transform: uppercase;
+    text-decoration: none; transition: all 0.3s; white-space: nowrap; border-radius: 2px;
+  }
+  .nav-switch:hover { background: var(--gold); color: var(--dark); }
 
   /* HERO */
   .hero {
@@ -281,6 +287,7 @@
     <li><a href="#target">Target Firms</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
+  <a href="punit_business_portfolio.html" class="nav-switch">⚡ BI Business</a>
 </nav>
 
 <!-- HERO -->
@@ -407,7 +414,7 @@
 
       <div class="dash-card">
         <div class="dash-img">
-          <div class="placeholder-text">📊<br><br>BlinkIt Dashboard<br><small>Upload screenshot to replace</small></div>
+          <img src="blinkit.png" alt="BlinkIt Dashboard" style="width:100%;height:100%;object-fit:cover;">
           <div class="dash-overlay"><span class="dash-overlay-text">View Project</span></div>
         </div>
         <div class="dash-body">
@@ -424,7 +431,7 @@
 
       <div class="dash-card">
         <div class="dash-img">
-          <div class="placeholder-text">🏦<br><br>Bank Loan Dashboard<br><small>Upload screenshot to replace</small></div>
+          <img src="bank_loan.png" alt="Bank Loan Dashboard" style="width:100%;height:100%;object-fit:cover;">
           <div class="dash-overlay"><span class="dash-overlay-text">View Project</span></div>
         </div>
         <div class="dash-body">
@@ -441,7 +448,7 @@
 
       <div class="dash-card">
         <div class="dash-img">
-          <div class="placeholder-text">🍕<br><br>Pizza Sales Dashboard<br><small>Upload screenshot to replace</small></div>
+          <img src="pizza_sales.png" alt="Pizza Sales Dashboard" style="width:100%;height:100%;object-fit:cover;">
           <div class="dash-overlay"><span class="dash-overlay-text">View Project</span></div>
         </div>
         <div class="dash-body">
@@ -514,7 +521,7 @@
           <div class="contact-icon">✉</div>
           <div>
             <div class="contact-label">Email</div>
-            <div class="contact-value"><a href="mailto:punitdave000@gmail.com">punitdave000@gmail.com</a></div>
+            <div class="contact-value"><a href="/cdn-cgi/l/email-protection#18686d76716c7c796e7d282828587f75797174367b7775"><span class="__cf_email__" data-cfemail="a7d7d2c9ced3c3c6d1c2979797e7c0cac6cecb89c4c8ca">[email&#160;protected]</span></a></div>
           </div>
         </div>
         <div class="contact-item">
@@ -543,7 +550,7 @@
         <div class="cta-box">
           <h3>Currently Open to Roles</h3>
           <p>I'm actively looking for <strong style="color:var(--text)">Business Analyst</strong> and <strong style="color:var(--text)">Data Analyst</strong> roles at tier-1 financial institutions. If you're a recruiter or hiring manager at a bank or financial firm — I'd love to connect.</p>
-          <a href="mailto:punitdave000@gmail.com" class="btn-primary">Send Me an Email</a>
+          <a href="/cdn-cgi/l/email-protection#4a3a3f24233e2e2b3c2f7a7a7a0a2d272b232664292527" class="btn-primary">Send Me an Email</a>
         </div>
       </div>
     </div>
@@ -555,11 +562,4 @@
   <div>Hyderabad · Open to Relocation · Finance & Data Professional</div>
 </footer>
 
-<script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.1 });
-  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-</script>
-</body>
-</html>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
